@@ -53,8 +53,12 @@ const Index = () => {
         <section id="about" className="min-h-screen flex items-center justify-center px-6 py-20">
           <div className="max-w-4xl w-full animate-fade-in">
             <Card className="p-12 text-center shadow-xl hover:shadow-2xl transition-shadow duration-300">
-              <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center">
-                <Icon name="User" size={64} className="text-white" />
+              <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
+                <img 
+                  src="https://cdn.poehali.dev/files/8df2a519-01bc-4453-a861-eb90912fa4d1.jpeg" 
+                  alt="Соня" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h2 className="text-5xl font-heading font-bold mb-4 text-gray-800">Соня</h2>
               <p className="text-xl text-muted-foreground mb-6">17 лет</p>
