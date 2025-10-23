@@ -137,12 +137,20 @@ const Index = () => {
             <Card className="p-10 shadow-xl">
               <p className="text-center text-lg text-gray-600 mb-8">У меня есть много друзей</p>
               <div className="grid md:grid-cols-3 gap-6">
-                {[1, 2, 3].map((item) => (
+                {[
+                  'https://cdn.poehali.dev/files/58a5f536-e7e7-47c3-929b-f5db9d502fb6.jpeg',
+                  'https://cdn.poehali.dev/files/782c920e-3e7b-4735-8092-a637f21b8edf.jpeg',
+                  'https://cdn.poehali.dev/files/7c7038a1-4338-456e-950d-fde1f4b6217b.jpeg',
+                ].map((img, index) => (
                   <div
-                    key={item}
-                    className="aspect-square rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center group hover:shadow-lg transition-all duration-300"
+                    key={index}
+                    className="aspect-square rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
                   >
-                    <Icon name="Image" size={48} className="text-primary/40 group-hover:scale-110 transition-transform" />
+                    <img 
+                      src={img} 
+                      alt={`Друзья ${index + 1}`} 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 ))}
               </div>
