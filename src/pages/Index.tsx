@@ -77,6 +77,13 @@ const Index = () => {
               <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
             </div>
             <Card className="p-10 shadow-xl">
+              <div className="mb-8 rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src="https://cdn.poehali.dev/files/80fd3e8a-8846-470f-a3c0-498c2bffdadc.png" 
+                  alt="Школа № 51" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <Icon name="School" size={32} className="text-primary" />
