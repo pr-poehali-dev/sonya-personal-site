@@ -79,7 +79,7 @@ const Index = () => {
             <Card className="p-10 shadow-xl">
               <div className="mb-8 rounded-xl overflow-hidden shadow-lg">
                 <img 
-                  src="https://cdn.poehali.dev/files/80fd3e8a-8846-470f-a3c0-498c2bffdadc.png" 
+                  src="https://cdn.poehali.dev/files/1761b3be-9465-4157-81c6-b90015a05aee.jpeg" 
                   alt="Школа № 51" 
                   className="w-full h-auto object-cover"
                 />
