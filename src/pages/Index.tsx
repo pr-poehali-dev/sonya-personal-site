@@ -10,6 +10,7 @@ const Index = () => {
     { id: 'about', label: 'О мне', icon: 'User' },
     { id: 'school', label: 'Учёба', icon: 'GraduationCap' },
     { id: 'exams', label: 'Экзамены', icon: 'BookOpen' },
+    { id: 'hobby', label: 'Хобби', icon: 'Music' },
     { id: 'friends', label: 'Друзья', icon: 'Users' },
     { id: 'family', label: 'Семья', icon: 'Home' },
   ];
@@ -128,7 +129,40 @@ const Index = () => {
           </div>
         </section>
 
-        <section id="friends" className="min-h-screen flex items-center justify-center px-6 py-20 bg-gray-50/50">
+        <section id="hobby" className="min-h-screen flex items-center justify-center px-6 py-20 bg-gray-50/50">
+          <div className="max-w-4xl w-full animate-fade-in">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-heading font-bold mb-4 text-gray-800">Хобби</h2>
+              <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+            <Card className="p-10 shadow-xl">
+              <div className="flex items-start gap-6 mb-6">
+                <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center flex-shrink-0">
+                  <Icon name="Music" size={32} className="text-white" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-heading font-semibold mb-3 text-gray-800">Танцы</h3>
+                  <p className="text-lg text-gray-700 mb-2">Школа танцев <span className="font-semibold text-primary">IRON</span></p>
+                  <p className="text-gray-600 mb-2">Группа: <span className="font-medium">Hip Mot Crew</span></p>
+                  <p className="text-gray-600 mb-2">Тренер: Матвей Шмырин</p>
+                  <p className="text-gray-600">Танцую вместе с одноклассницей Кристиной Шевченко</p>
+                </div>
+              </div>
+              <div className="grid md:grid-cols-2 gap-4 mt-6">
+                <div className="flex items-center gap-3 p-4 bg-primary/5 rounded-lg">
+                  <Icon name="Sparkles" size={24} className="text-primary" />
+                  <span className="text-gray-700">Hip-hop танцы</span>
+                </div>
+                <div className="flex items-center gap-3 p-4 bg-primary/5 rounded-lg">
+                  <Icon name="Users" size={24} className="text-primary" />
+                  <span className="text-gray-700">Групповые выступления</span>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </section>
+
+        <section id="friends" className="min-h-screen flex items-center justify-center px-6 py-20">
           <div className="max-w-4xl w-full animate-fade-in">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-heading font-bold mb-4 text-gray-800">Друзья</h2>
