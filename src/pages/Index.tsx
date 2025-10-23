@@ -182,15 +182,12 @@ const Index = () => {
                   ))}
                 </div>
               </div>
-              <div className="grid md:grid-cols-3 gap-6">
-                {[1, 2, 3].map((item) => (
-                  <div
-                    key={item}
-                    className="aspect-square rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center group hover:shadow-lg transition-all duration-300"
-                  >
-                    <Icon name="Image" size={48} className="text-primary/40 group-hover:scale-110 transition-transform" />
-                  </div>
-                ))}
+              <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                <img 
+                  src="https://cdn.poehali.dev/files/dc7fe8f2-e8c8-4a0b-9661-14c82dc49b58.png" 
+                  alt="Семья" 
+                  className="w-full h-auto object-cover"
+                />
               </div>
             </Card>
           </div>
